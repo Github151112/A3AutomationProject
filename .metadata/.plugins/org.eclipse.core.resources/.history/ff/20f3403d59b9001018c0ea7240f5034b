@@ -1,0 +1,10 @@
+package WebelementMethod;
+
+public class WorkingWithGetCssValue {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

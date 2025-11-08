@@ -1,0 +1,20 @@
+package selectClass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+	static WebDriver driver;
+
+	public static void precondition(String url) {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(url);
+	}
+	
+	public static void postCondition()
+	{
+		driver.quit();
+	}
+
+}
